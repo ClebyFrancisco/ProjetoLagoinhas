@@ -13,7 +13,7 @@ body{
 }
 header{
     height:100px;
-    background-color: white;
+    background-color: #23232e;
 }
 .header{
     max-width: 1140px;
@@ -40,7 +40,7 @@ header{
 }
 .nav-list li a {
     text-decoration: none;
-     color:  var(--red-padrão);
+     color:  white;
     padding-left: 5px;
     padding-right: 5px;
     text-transform: uppercase;
@@ -77,8 +77,62 @@ header{
 .btnQueroAjudar:hover{
     background-color: rgb(117, 44, 44);
 }
+/* style pop-up*/
+.modal-container{
+  width:100vw;
+  height:100vh;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container.mostrar{
+  display:flex;
+}
+.modal{
+  background-color: white;
+  width: 60%;
+  height:80%;
+  min-width: 300px;
+  padding: 40px;
+  border: 10px solid var(--red-padrão);
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+}
+@keyframes modal{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
 
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 
+  }
+}
+.mostrar .modal {
+  animation: modal 3s;
+
+}
+.btnFechar{
+  position: absolute;
+  font-size: 1.2em;
+  top:-30px;
+  right: -30px;
+  width:50px;
+  height:50px;
+  border-radius: 510%;
+  border: 4px solid white;
+  background: var(--red-padrão);
+  color: white;
+  cursor:pointer;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
 @media (max-width: 999px) {
     body {
       overflow-x: hidden;

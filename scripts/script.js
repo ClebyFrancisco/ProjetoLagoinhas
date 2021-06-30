@@ -42,3 +42,18 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+
+  //function pop-UP
+  function iniciarModal(modalId){
+    const modal = document.getElementById(modalId);
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (e) =>{
+      if(e.target.id == modalId  || e.target.className == 'btnFechar'){
+        modal.classList.remove('mostrar');
+      }
+    })
+  }
+  const btnAjudar = document.querySelector('.btnQueroAjudar');
+  btnAjudar.addEventListener('click', () => iniciarModal(`modal-doacao`));
+  
