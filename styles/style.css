@@ -1,5 +1,6 @@
 :root {
     --red-padrão: #AC312F;
+
 }
 
 *{
@@ -13,7 +14,7 @@ body{
 }
 header{
     height:100px;
-    background-color: #23232e;
+    background-color:#f8d5e1;
 }
 .header{
     max-width: 1140px;
@@ -23,6 +24,7 @@ header{
     align-items: center;
 }
 .logo{
+  margin-left: 30px;
     width: 100px;
 
 }
@@ -103,6 +105,69 @@ header{
   box-shadow: 0 0 0 10px white;
   position: relative;
 }
+/* banner*/
+
+.banner{
+  background: url('../images/criançaBanner.jpg') no-repeat;
+  height: 92vh;
+  background-size:cover;
+  background-position:100%;
+  overflow:hidden;
+  background-color:#333;
+
+}
+.banner .sliders {
+  width:1000vw;
+  height:100%;
+}
+.banner .slide {
+  width:100vw;
+  height:100%;
+  display:inline-block;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.banner .slidearea {
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  justify-content: center;
+  align-items:center;
+  color:#FFF;
+}
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:50px;
+}
+.banner h1 span {
+  color:var(--red-padrão);
+}
+.banner h2 {
+  text-transform: uppercase;
+  margin-top:20px;
+}
+.banner .sliders-pointers {
+  width:100vw;
+  height:20px;
+  position:absolute;
+  margin-top:-50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .pointer {
+  width:15px;
+  height:15px;
+  border:2px solid var(--red-padrão);
+  border-radius:8px;
+  margin-left:5px;
+  margin-right:5px;
+  cursor:pointer;
+}
+.banner .pointer.active {
+  background-color: var(--red-padrão);
+}
+
 @keyframes modal{
   from {
     opacity: 0;
