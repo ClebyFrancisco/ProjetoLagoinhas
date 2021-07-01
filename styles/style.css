@@ -232,31 +232,10 @@ header{
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
 }
 
-/* seção projetos */
 
-/* #oProjeto,
-.oProjeto  {
-  background-color: blue;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-.text-projeto{
-  flex: 1;
-  background-color: green;
-  width: 60%;
-  height: 500px;
 
-}
-.image-projeto{
-  
-  background-color: var(--yelow-padrão);
-  width: 40%;
-  height: 500px;
 
-} */
+
 
 
 /*  configurações Main geral*/
@@ -287,7 +266,7 @@ header{
   background-color: var(--cinza-padrão);
 }
 .default.light.tes{
-  background-color: var(--laranja-padrão);
+  background-color: #f0e9d7;
 }
 .default.light .section-title,
 .default.light .section-body {
@@ -312,14 +291,18 @@ NOSSA HISTORIA
   display:flex;
 }
 .sobreProjeto--left,
-.nossaHistoria--right {
+.nossaHistoria--right{
+
   flex:1;
 }
 .sobreProjeto--left,
-.nossaHistoria--right p {
+.nossaHistoria--right p,
+.text-acoes p {
+  margin: 20px;
+  text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  font-size:18px;
-  line-height:25px;
+  font-size:20px;
+  line-height:23px;
 }
 .sobreProjeto--right,
 .nossaHistoria--left {
@@ -334,9 +317,9 @@ NOSSA HISTORIA
 
 /* NOSSAS AÇÕES 
 */
-#NossaAcoes,
+
 .NossaAcoes {
-  background-color: var(--red-padrão);
+  background-color: var(--cinza-padrão);
   height: 600px;
   width: 100%;
   display: flex;
@@ -345,33 +328,30 @@ NOSSA HISTORIA
 }
 .text-acoes{
   flex: 1;
-  background-color: green;
   width: 40%;
   height: 500px;
 
 }
+
 .image-acoes{
   
-  background-color: var(--yelow-padrão);
   width: 60%;
   height: 500px;
 
 }
-.image-acoes .image1 {
+.image-acoes .image1 img {
   margin-top: 3%;
   margin-left: 3%;
   width:45%;
   height:250px;
-  background-color: yellowgreen;
   border-radius: 10%;
 
 }
-.image-acoes .image2{
+.image-acoes .image2 img{
   margin-top: -5%;
   margin-left:52%;
   width:45%;
   height:250px;
-  background-color: orange;
   border-radius: 10%;
 }
 
@@ -467,33 +447,25 @@ MULTIMIDIA
 
 
 
-
-
-
-/* #NossaHistoria,
-.nossaHistoria  {
-  background-color: blue;
-  height: 600px;
+.section-contato{
   width: 100%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-.text-historia{
-  
-  background-color: green;
-  width: 60%;
-  height: 500px;
 
 }
-.image-historia{
+.containerContato {
+ display: flex;
+ max-width: 1140px;
+ margin: auto;
+ padding-top:35px;
+ 
+}
+.forms-contato {
   flex: 1;
-  background-color: var(--yelow-padrão);
+  width:60%;
+
+}
+.image-contato{
   width: 40%;
-  height: 500px;
-
-
-} */
+}
 
 
 
