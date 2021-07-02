@@ -2,12 +2,10 @@
   --red-padrão: #AC312F;
   --red1: #800000;
   --red2: #FF1D28;
-  --yelow-padrão: #DBBD78;
+  --yelow-padrão:#DBBD78;;
   --cinza-padrão:#DBD9D8;
   --laranja-padrão:#E6845C;
   --azul-preto:  #23232e;
-
-
   
 }
 
@@ -449,6 +447,7 @@ MULTIMIDIA
 
 .section-contato{
   width: 100%;
+  background-color: #FA7E72;
 
 }
 .containerContato {
@@ -459,13 +458,55 @@ MULTIMIDIA
  
 }
 .forms-contato {
-  flex: 1;
   width:60%;
 
 }
-.image-contato{
-  width: 40%;
+.forms-contato h4 {
+  text-align: center;
+  color: white;
+  font-size: 22px;
 }
+
+
+.forms-contato input {
+  border: none;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 0.4em;
+  height: 30px;
+  margin-top: 20px;
+}
+.forms-contato input::placeholder,
+.forms-contato textarea::placeholder{
+  font-family: 'Josefin Sans', sans-serif;
+ 
+}
+
+.forms-contato textarea {
+  border: none;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 0.4em;
+  height: 100px;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+.input-submit {
+  color: white;
+  background: var(--red-padrão);
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.footer--area {
+  text-align: center;
+  align-items: center;
+  background-color: var(--yelow-padrão);
+}
+
 
 
 
