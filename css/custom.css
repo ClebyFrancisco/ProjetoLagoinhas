@@ -1,0 +1,215 @@
+:root {
+  --red-padrao: #AC312F;
+  --red1: #800000;
+  --red2: #FF1D28;
+  --yelow-padrao:#DBBD78;;
+  --gray-light:#DBD9D8;
+  --orange-padrao:#E6845C;
+  --dark:  #23232e;
+  
+}
+
+/* HEIGHT 100% */
+html, body { font-family: 'Josefin Sans', sans-serif;height: 100%;}
+.bloco {min-height: 100%; padding-top: 94px;}
+
+/* COLORS */
+.yellow-padrao {background-color: #DBBD78;}
+
+/* LOGO */
+.logo_text {font-size: 0; margin: 0;}
+.logo_img {width: 100px; margin-top: 15px;}
+
+/* MENU */
+.navbar {background-color:#dbbd78c2; transition: background 0.5s linear; height: 100px;}
+.navbar ul a:hover {background-color: transparent; color: var(--red-padrao);}
+.nav-color {background-color: var(--yelow-padrao); transition: background 0.5s linear;}
+
+/* HOME */
+.banner{
+  background: url('../images/criançasBanner.jpg') no-repeat;
+  height: 92vh;
+  background-size:cover;
+  background-position:100%;
+  overflow:hidden;
+  background-color:#333;
+
+}
+.banner .sliders {
+  width:1000vw;
+  height:100%;
+}
+.banner .slide {
+  width:100vw;
+  height:100%;
+  display:inline-block;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.banner .slidearea {
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  justify-content: center;
+  align-items:center;
+  color:#FFF;
+}
+.banner h1 {
+  text-align: center;
+  font-size:2.8rem;
+  font-family: jose;
+
+}
+.banner h1 span {
+  color:var(--yelow-padrao) !important;
+}
+.banner .titulo1::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+@keyframes pisca {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+/* .banner h2 {font-size: 2.5rem; font-weight: 900; text-transform: uppercase;}
+.banner p {font-size: 1.2rem; line-height: 1.8rem;}
+ */
+/* HOME - ANIMATION */
+@keyframes mudarbg {
+    40%  {background-image: url('../images/pl4.jpg');}
+    80%  {background-image: url('../images/pl8.jpg');}
+    100% {background-image: url('../images/criançasBanner.jpg');}
+}
+.btnQueroAjudar{
+  background-color: var(--red-padrao);
+  color: white;
+ margin-left: 20px;
+ margin-top: 33px;
+  height: 35px;
+  border-radius: 2em;
+  width:170px;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  border: none;
+}
+.btnQueroAjudar:hover{
+  background-color: rgb(117, 44, 44);
+}
+
+
+/* TITULO E PARAGRAFO */
+.titulo {font-size: 2rem; text-transform: uppercase;}
+.titulo::after {content: ''; display: block; width: 100px; border-top: 1px solid var(--yelow-padrao);
+margin:15px auto;}
+.paragrafo {line-height: 1.8rem; }
+
+/* SOBRE */
+
+
+
+/* CONTATO */
+.contato { background-image: url('../img/textura1.png'); }
+.contato h4 {font-size: 1.2rem; text-transform: uppercase; font-weight: 900;}
+.contato .mapa {min-height: 560px;}
+.contato .mapa iframe {width: 100%; min-height: 560px; border:none;}
+.contato .informacoes {background-image: url('../images/textura2.png'); min-height: 560px; padding: 30px; } 
+.contato .formulario {min-height: 560px; padding: 30px;}
+
+/* RODAPE */
+.rodape {background-image: url('../images/pl2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
+padding: 0 0;}
+.rodp {height:inherit; width: 100%; background-color: #dbbd78d3;}
+/* CUSTOM */
+nav.nav-extended .nav-wrapper {
+  min-height: 94px; 
+}
+
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+}
+
+nav, nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {  
+  height: 94px;
+  line-height: 94px;
+}
+
+.side-nav {background: url('../img/textura2.png');}
+.side-nav li>a {color: #fff; font-weight: 100;}
+.row {margin-bottom: 0;}
+.tabs {background-color: #222;}
+.tabs .tab a {color: #fff;}
+.tabs .tab a:hover, .tabs .tab a.active {color:var(--yelow-padrao); }
+.tabs .indicator {background-color: var(--yelow-padrao); }
+
+/* MEDIA */
+@media only screen and (max-width: 910px){
+  .nossaHistoria{  flex-direction: column;
+    text-align: center; }
+  .nossaHistoria--left{
+    margin: auto;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:592px){
+  .NossaAcoes{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .text-acoes{
+    width: 80%;
+  
+  }
+  .image-acoes {
+    display: none;
+    /* order: -1; */
+  }
+  /* .image-acoes .image1,
+  .image-acoes .image2{
+    width: 100%;
+  }
+  .image-acoes .image1 img {
+    margin-left: -60px;
+  
+  }
+  .image-acoes .image2 img{
+    margin-top: 10%;
+    margin-left:60%;
+
+  } */
+  
+}
+@media only screen and (max-width:550px){
+  .NhImg {
+    margin:auto;
+    width: 320px;
+    height:280px;
+  }
+}
+@media only screen and (max-width: 480px) {
+.card-image-horizontal {display: none;}
+}
+
+@media only screen and (min-width: 601px) {
+.banner {padding-top: 4.5rem;}
+.banner h2 {font-size: 4rem;}
+.container {width: 85%;}
+}
+
+@media only screen and (min-width: 993px) {
+.banner {padding-top: 5rem;}
+.banner h2 {font-size: 5rem;}
+.container {width: 90%;}
+}

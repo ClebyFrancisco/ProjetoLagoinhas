@@ -2,342 +2,470 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Projeto Gama Academy para o Projeto Lagoinhas" />
-    <meta name="author" content="Lucas Miliante, Cleby Francisco e Amanda" />
+    <meta name="author" content="Lucas Miliante, Cleby Francisco, Amanda" />
+    <meta name="robots" content="index,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto lagoinha</title>
+    <title>Projeto Lagoinhas - Grupo Filhos De Deus</title>
+    <link rel="icon" href="images/logoBrancoPNG.png">
+    <!-- GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap">
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <div class="header">
-            <div class="logo">
-                <img src="./images/logo.png" class="logoImg" alt="Logo Projeto Lagoinhas">
-            </div>
-            <div class="menu">
-                <nav role="navigation">
-                    <div class="mobile-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#oProjeto">O projeto</a></li>
+        <!-- MENU MOBILE -->
+        <ul class="side-nav" id="menu-mobile">
+            <li><a href="">Home</a></li>
+            <li><a href="#sobre">O projeto</a></li>
+            <li><a href="#NossaHistoria">Nossa História</a></li>
+            <li><a href="#NossaAcoes">Nossas Ações</a></li>
+            <li><a href="#galeria">Multimídia</a></li>
+            <li><a href="#contato">Contato</a></li>
+
+            <button class="btnQueroAjudar">Quero Ajudar</button>
+        </ul>
+
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <h1 class="logo_text">Projeto Lagoinhas - Grupo Filhos De Deus</h1>
+                    <a href=""><img class="logo_img" src="images/logo.png" alt="Projeto Lagoinha"></a>
+
+                    <ul class="right light hide-on-med-and-down">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#sobre">O projeto</a></li>
                         <li><a href="#NossaHistoria">Nossa História</a></li>
-                        <li><a href="#NossaAcoes">Nossas Ações</a></li>
-                        <li><a href="#Multimidia">Multimídia</a></li>
+                        <li><a href="#galeria">Multimídia</a></li>
                         <li><a href="#contato">Contato</a></li>
 
-                        <a href="#" class="btnQueroAjudar">Quero Ajudar</a>
+                        <button class="btnQueroAjudar">Quero Ajudar</button>
 
                     </ul>
-                </nav>
-            </div>
-            <!-- <div class="botaoChamada">
-                <button href="#QueroAjudar">Quero Ajudar</button>
-            </div>-->
 
+                    <a href="#" data-activates="menu-mobile" class="button-collapse right"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </nav>
         </div>
     </header>
-    <main>
-        <section class="banner">
-            <div class="sliders" style="margin-left:0;">
 
-                <div class="slide">
-                    <div class="slidearea">
-                        <h1 class="titulo">Apoie o quanto quiser e ajude a mudar vidas. </h1><br />
-                        <h1><span>Projeto Lagoinha</span></h1>
-                        <a href="#" class="btnQueroAjudar">Quero Ajudar</a>
-                    </div>
+    <!-- HOME -->
+    <section class="banner bloco scrollspy" id="home">
+        <div class="sliders" style="margin-left:0;">
 
+            <div class="slide">
+                <div class="slidearea">
+                    <h1 class="titulo1">Apoie o quanto quiser e ajude a mudar vidas. </h1><br />
+                    <h1><span>Projeto Lagoinha</span></h1>
+                    <a href="#" class="btnQueroAjudar">Quero Ajudar</a>
                 </div>
 
-        </section>
+            </div>
+            </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre default light bloco scrollspy" id="sobre">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light titulo">O Projeto</h2>
+            </div>
+
+            <div class="col s12 l6">
+                
+                <div class="sobreProjeto--left">
+                    <p>O principal objetivo do Projeto Lagoinha é levar até as crianças e adolescentes, que
+                        participam do projeto, orientações sobre saúde, convivência harmoniosa, auxílio ao próximo e
+                        instrução intelectual,
+                        através do reforço escolar e valorização da auto estima.
+                        Nesse ano de 2021 estão dando assistência a 120 crianças e adolescentes de 2 a 16 anos
+                        em um total de 65 famílias. Infelizmente, o projeto não consegue recursos e estrutura para
+                        atender a todos do bairro e o contato maior é somente com as crianças e adolescentes
+                        assistidos. Em conversa com as mães, percebe -se que o projeto é a melhor coisa que pode
+                        acontecer para seus filhos, pois leva para as crianças o entendimento de amor, respeito ao
+                        próximo e esperança de que o futuro pode ser melhor é só cada um fazer a sua parte e seguir
+                        o
+                        caminho correto. </p>
+                    <br />
+
+                </div>
+               
+            </div>
+
+            <div class="col s12 l6">
+                <div class="carousel carousel-slider" data-indicators="true">
+                    <a href="#" class="carousel-item">
+                        <img alt="Imagem institucional" src="images/projetoLagoinha2.jpg">
+                    </a>
+
+                    <a href="#" class="carousel-item">
+                        <img alt="Imagem institucional" src="images/pl4.jpg">
+                    </a>
+
+                    <a href="#" class="carousel-item">
+                        <img alt="Imagem institucional" src="images/pl3.jpg">
+                    </a>
+                </div>
+            </div>
+
+        </div>
 
 
-        <section id="oProjeto" class="default light">
-            <div class="section-title">Sobre o Projeto</div>
-            <div class="section-desc"></div>
-            <div class="section-body">
-                <div class="sobreProjeto">
-                    <div class="sobreProjeto--left">
-                        <p>O principal objetivo do Projeto Lagoinha é levar até as crianças e adolescentes, que
-                            participam do projeto, orientações sobre saúde, convivência harmoniosa, auxílio ao próximo e
-                            instrução intelectual,
-                            através do reforço escolar e valorização da auto estima.
-                            Nesse ano de 2021 estão dando assistência a 120 crianças e adolescentes de 2 a 16 anos
-                            em um total de 65 famílias. Infelizmente, o projeto não consegue recursos e estrutura para
-                            atender a todos do bairro e o contato maior é somente com as crianças e adolescentes
-                            assistidos. Em conversa com as mães, percebe -se que o projeto é a melhor coisa que pode
-                            acontecer para seus filhos, pois leva para as crianças o entendimento de amor, respeito ao
-                            próximo e esperança de que o futuro pode ser melhor é só cada um fazer a sua parte e seguir
-                            o
-                            caminho correto. </p>
+    </section>
+     <section id="NossaHistoria" class="default light tes bloco scrollspy">
+        <div class="col s12 center">
+            <h2 class="light titulo">Nossa Historia</h2>
+        </div>
+
+        <div class="section-desc"></div>
+        <div class="section-body">
+            <div class="nossaHistoria">
+                <div class="col s12 l6">
+                    <img src="./images/projetoLagoinha2.jpg" class="NhImg" alt="historia projeto Lagoinha"/>
+                </div>
+                <div class="nossaHistoria--right">
+                    <p>O Projeto Lagoinhas é vinculado ao Centro Espírita Almerinda Alves e começou a atuar
+                        em 2002 na associação de moradores do bairro de Vila Leopoldina – Duque de Caxias.<br />
+                        A partir de 2004, foram para a sede onde funciona até hoje.
+                        O principal objetivo é levar até as crianças e adolescentes, que participam do projeto,
+                        orientações sobre saúde, convivência harmoniosa, auxílio ao próximo e instrução intelectual,
+                        através do reforço escolar e valorização da auto estima.
+                        Segundo a responsável pela obra social, a maior motivação para realizar esse trabalho é
+                        perceber que apesar deles viverem num ambiente hostil, os adolescentes e crianças têm sonhos
+                        de uma vida melhor e demonstram o desejo de trabalhar e progredir de forma digna.<br />
+                        São 19 anos de muito trabalho e amor a essas crianças e para manter esse projeto
+                        contam com o amor dos amigos que fazem doações e com os voluntários que atuam nos
+                        encontros que acontecem todos os sábados pela manhã.
                         <br />
 
-                    </div>
-                    <div class="sobreProjeto--right">
-                        <img src="./images/projetoLagoinha1.jpg" />
-                    </div>
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+   <section id="NossaAcoes" class="default light bloco scrollspy">
+        <div class="col s12 center">
+            <h2 class="light titulo">Nossas Açoes</h2>
+        </div>
+            <div class="NossaAcoes">
 
-
-        <section id="NossaHistoria" class="default light tes">
-            <div class="section-title">Nossa Historia</div>
-            <div class="section-desc"></div>
-            <div class="section-body">
-                <div class="nossaHistoria">
-                    <div class="nossaHistoria--left">
-                        <img src="./images/projetoLagoinha2.jpg" />
-                    </div>
-                    <div class="nossaHistoria--right">
-                        <p>O Projeto Lagoinhas é vinculado ao Centro Espírita Almerinda Alves e começou a atuar
-                            em 2002 na associação de moradores do bairro de Vila Leopoldina – Duque de Caxias.<br />
-                            A partir de 2004, foram para a sede onde funciona até hoje.
-                            O principal objetivo é levar até as crianças e adolescentes, que participam do projeto,
-                            orientações sobre saúde, convivência harmoniosa, auxílio ao próximo e instrução intelectual,
-                            através do reforço escolar e valorização da auto estima.
-                            Segundo a responsável pela obra social, a maior motivação para realizar esse trabalho é
-                            perceber que apesar deles viverem num ambiente hostil, os adolescentes e crianças têm sonhos
-                            de uma vida melhor e demonstram o desejo de trabalhar e progredir de forma digna.<br />
-                            São 19 anos de muito trabalho e amor a essas crianças e para manter esse projeto
-                            contam com o amor dos amigos que fazem doações e com os voluntários que atuam nos
-                            encontros que acontecem todos os sábados pela manhã.
-                            <br />
-
-                    </div>
+                <div class="text-acoes col s12 l6">
+                    <p>Além das atividades normais de
+                        ensinamentos através brincadeiras e músicas, as
+                        crianças recebem reforço escolar, aulas de xadrez e aulas de desenho. Durante o ano tem
+                        as
+                        campanhas de higiene corporal, higiene bucal, campanha do cobertor, as festas de Páscoa,
+                        dias
+                        das crianças e Natal e para arrecadar fundos realizam eventos beneficentes como noite de
+                        caldos, feijoada, rifas beneficentes e doação de amigos.</p>
 
                 </div>
-            </div>
-        </section>
-        <section id="NossaAcoes" class="default light">
-            <div class="section-title">Nossa Açoes</div>
-            <div class="section-desc"></div>
-            <div class="section-body">
-                <div class="NossaAcoes">
-
-                    <div class="text-acoes">
-                        <p>Além das atividades normais de
-                            ensinamentos através brincadeiras e músicas, as
-                            crianças recebem reforço escolar, aulas de xadrez e aulas de desenho. Durante o ano tem
-                            as
-                            campanhas de higiene corporal, higiene bucal, campanha do cobertor, as festas de Páscoa,
-                            dias
-                            das crianças e Natal e para arrecadar fundos realizam eventos beneficentes como noite de
-                            caldos, feijoada, rifas beneficentes e doação de amigos.</p>
-
+                <div class="image-acoes col s12 l6">
+                    <div class="image1">
+                        <img src="./images/projetoLagoinha3.jpg" alt="crianças estudando - Projeto lagoinha">
                     </div>
-                    <div class="image-acoes">
-                        <div class="image1">
-                            <img src="./images/projetoLagoinha3.jpg" alt="">
-                        </div>
-                        <div class="image2">
-                            <img src="./images/projetoLagoinha4.jpg" alt="">
-                        </div>
-                        ..
-                        <!-- <img src="./images/criançasBanner.jpg" alt=""> -->
+                    <div class="image2">
+                        <img src="./images/projetoLagoinha4.jpg" alt="crianças Projeto lagoinha">
                     </div>
-
-
-
-
+                  
                 </div>
-            </div>
-        </section>
-        <section id="Multimidia" class="default light tes">
-            <div class="section-title">Our Projects</div>
-            <div class="section-desc">What we create</div>
-            <div class="section-body">
-                <div class="section-projects">
 
-                    <div class="section-projects--photos">
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl1.jpg" />
+
+
+
+            </div>
+ 
+    </section>
+    <section id="galeria" class="default light tes bloco scrollspy">
+        <div class="col s12 center">
+            <h2 class="light titulo">Galeria</h2>
+        </div>
+
+        <div class="section-body">
+            <div class="section-projects">
+
+                <div class="section-projects--photos">
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+
+                            <!-- todas as (section-projects--photoinfo) estão inutilizadas foram inseridas para uma possivel alteração  -->
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl1.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl2.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl2.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl3.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl3.jpg" alt="projeto lagoinha imagens da galeria"/>
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl4.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl4.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl5.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl5.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl6.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl6.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl7.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl7.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl8.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl8.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl9.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl9.jpg" alt="projeto lagoinha imagens da galeria" />
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl1.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl1.jpg" alt="projeto lagoinha imagens da galeria"/>
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl10.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl10.jpg" alt="projeto lagoinha imagens da galeria"/>
                         </div>
-                        <div class="section-projects--photo">
-                            <div class="section-projects--photoarea">
-                                <div class="section-projects--photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Vestibulum porta aliquet risus</p>
-                                </div>
-                                <img src="./images/pl11.jpg" />
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>ABOUT</h5>
+                                <p>Vestibulum porta aliquet risus</p>
                             </div>
+                            <img src="./images/pl11.jpg" alt="projeto lagoinha imagens da galeria"/>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="contato" class="section-contato">
-            <div class="containerContato">
-                <div class="mapa-contato">
+        </div>
+    </section>
+
+
+
+    <!-- CONTATO -->
+    <section class="contato bloco scrollspy" id="contato">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="titulo light black-text"> Contato </h2>
+            </div>
+
+            <div class="col s12 m6 l4 hide-on-med-only ">
+                <div class="mapa transparent">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.9508321059343!2d-43.31349488597646!3d-22.767205885082973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997aa0159c0795%3A0x2ef1e7a89b2cfd3!2sR.%20Iapu%2C%20632%20-%20Vila%20Centenario%2C%20Duque%20de%20Caxias%20-%20RJ%2C%2025030-460!5e0!3m2!1spt-BR!2sbr!4v1625189801380!5m2!1spt-BR!2sbr"
-                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        loading="lazy"></iframe>
                 </div>
-
-                <div class="forms-contato">
-                    <h4>Fale com a gente!</h4>
-                    <form class="form" method="POST" action="js/email.php">
-                        <div class="contato-split">
-                            <input type="text" name="nome" placeholder="Nome..." required="required">
-                            <input type="email" name="email" placeholder="E-mail..." required="required">
-                            <input type="tel" name="telefone" placeholder="WhatsApp.." required="required">
-                        </div>
-                        <textarea name="mensagem" placeholder="Sua mensagem..." required="required"></textarea>
-                        <input class="input-submit" type="submit" name="acao" value="Enviar mensagem!">
-                    </form>
-
-                </div>
-
             </div>
 
-        </section>
+            <div class="col s12 m6 l4">
+                <div class="informacoes white-text">
+                    <h4> Redes sociais </h4>
+
+                    <a href="https://www.instagram.com/projetolagoinhas/" target="_blank" class="btn-floating yellow-padrao"><i class="fa fa-instagram"></i></a>
+                    <!--  <a href="#" class="btn-floating yellow-padrao"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="btn-floating yellow-padrao"><i class="fa fa-twitter"></i></a> -->
+
+                    <h4> Endereço </h4>
+
+                    <p class="light"> SEDE DO PROJETO LAGOINHAS: Rua Iapu, nº 632 – Vila Leopoldina – Duque de
+                        Caxias/RJ<br /><br /> GRUPO
+                        ESPÍRITA ALMERINDA ALVES:<br /> Rua Barbacena nº 447 – Vila Leopoldina – Duque de Caxias/ RJ</p>
+
+                    <h4> Contatos </h4>
+                    <p class="light">
+                        (88) 00000000 <br>
+                        (88) 00000000 <br>
+                        (88) 00000000
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="formulario white black-text">
+                    <h4> Fale conosco </h4>
+
+
+                    <form action="email.php" method="post">
+
+                        <div class="input-field">
+                            <input type="text" name="name" required="required">
+                            <label>Seu nome</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="email" name="email" required="required" >
+                            <label >Seu email</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="tel" name="tel" required="required">
+                            <label>Tel/WhastApp</label>
+                        </div>
+
+                        <div class="input-field">
+                            <textarea name="message" class="materialize-textarea"></textarea>
+                            <label >Mensagem</label>
+                        </div>
+
+                        <button class="btn yellow-padrao" type="submit"> Enviar </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
 
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="rodp">
+            <div class="row container center">
+                <img src="images/logo.png" class="logo_img">
+                <p class="light">© Projeto Lagoinha 2021 - Todos os direitos reservados </p>
 
-
-
-
-
-
-
-
-
-    </main>
-    <footer>
-        <div class="footer--area">
-            <img src="./images/logo.png" width="120px" height="120px" alt="">
+            </div>
         </div>
     </footer>
 
 
-    <script src='http://maps.google.com/maps/api/js?key=AIzaSyDv7YRz1WWPhkr6aim8wEm4WDPBdk81z54'></script>
-    <script src="./scripts/script.js"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- JAVASCRIPT -->
     <script>
-        // efeito typeWriter (maquina de escrever)
-        function typeWriter(elemento) {
+        // INICIALIZAÇÃO 
+        $(document).ready(function () {
+            // MENU MOBILE
+            $(".button-collapse").sideNav();
+            // LINK INTERNO
+            $(".scrollspy").scrollSpy({
+                scrollOffset: 0
+            });
+            // CAROUSEL
+            $(".carousel.carousel-slider").carousel({
+                fullWidth: true
+            });
+            // MODAL
+            $(".modal").modal();
+            // TABS
+            $("ul.tabs").tabs();
+            // ESCONDER MENU AO CLICAR
+            $(".hide-menu").click(function () {
+                $(".button-collapse").sideNav("hide");
+            });
+            // AUTOPLAY
+            function autoplay() {
+                $(".carousel").carousel("next");
+                setTimeout(autoplay, 4500);
+            }
+
+            autoplay();
+
+        });
+        // ADICIONANDO NAVCOLOR
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 100) {
+                $(".navbar").addClass("nav-color");
+            } else {
+                $(".navbar").removeClass("nav-color");
+            }
+        });
+
+         // efeito typeWriter (maquina de escrever)
+         function typeWriter(elemento) {
             const textoArray = elemento.innerHTML.split('');
             elemento.innerHTML = '';
             textoArray.forEach((letra, i) => {
                 setTimeout(() => elemento.innerHTML += letra, 200 * i);
             });
         }
-        const titulo = document.querySelector('.titulo');
-        const subtitulo = document.querySelector('.subtitulo');
+        const titulo = document.querySelector('.titulo1');
         typeWriter(titulo);
-
-    </script>
-    <script type='text/javascript'>
-        function init_map() { var myOptions = { zoom: 13, center: new google.maps.LatLng(-22.76721643585728, -43.31130304852395), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(-22.76721643585728, -43.31130304852395) }); infowindow = new google.maps.InfoWindow({ content: '<strong> Projeto Lagoinha </strong><br> MEU ENDEREÇO <br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);
     </script>
 
 
